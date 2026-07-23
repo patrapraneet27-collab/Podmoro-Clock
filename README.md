@@ -65,16 +65,22 @@ Instead of hiding useful features behind subscriptions, Podmoro is being built a
 
 ## 🛣️ Roadmap
 
-- [x] Basic Clock
-- [x] Basic Pomodoro Timer
+- [x] Clock
+- [x] Pomodoro Timer
+- [ ] To-do List
+- [ ] Calculator
+- [ ] Calendar
+- [ ] Spotify Integration
+- [ ] Ambient Sounds
 - [ ] Custom Wallpapers
-- [ ] Music Integration
-- [ ] Better UI & Animations
-- [ ] Task Management
-- [ ] Productivity Analytics
-- [ ] User Accounts
-- [ ] Cloud Synchronization
-- [ ] Mobile Support
+- [ ] Video Backgrounds
+- [ ] Theme Customization
+- [ ] Keyboard Shortcuts
+- [ ] Fullscreen Focus Mode
+- [ ] Picture-in-Picture Timer
+- [ ] Offline Support (PWA)
+
+
 
 *(This roadmap will continue to grow.)*
 
