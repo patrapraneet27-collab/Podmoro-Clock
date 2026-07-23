@@ -1,0 +1,223 @@
+/* iframe{
+    width: 25%;
+} */
+
+body{
+    background-image: url(back.png);
+    font-family: "Quicksand",sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+
+#clock{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    justify-self: center;
+    align-self: baseline;
+    font-size:230px;
+    font-weight: 800;
+    position: relative;
+    font-family: "Saira Stencil",sans-serif;
+    animation: fadein 1s ease-in;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.top-ribbon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.249);
+    backdrop-filter: blur();
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+
+.i1{
+    width: 40px;
+    height: 40px;
+    color: blueviolet;
+    padding: 5px;
+    display: flex;
+    justify-self: left;
+}
+
+.top-text-1{
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+.top-text-2{
+    color: grey;
+    font-size: 23px;
+}
+
+.line{
+    display: flex;
+    background-color: grey;
+    width: 3px;
+    height: 30px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.day-and-month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 20px;
+}
+
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.blocks{
+    background-color:rgba(255, 255, 255, 0.249);
+    backdrop-filter: blur();
+    -webkit-backdrop-filter: blur(5px);
+    width: 20%;
+    /*height: 80px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.blocks:hover{
+    /* color: black; */
+    background-color:rgba(255, 255, 255, 0.427);
+    transform: scale(1.02);
+}
+
+.i2{
+    /* margin-left: 20px; */
+    padding: 20px 10px 20px 20px;
+}
+#Timer-tab{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction:column;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    background-color: none;
+    width: 100dvh;
+    margin: auto;
+    animation: fadein 1s ease-in;
+}
+#timer{
+    font-size:180px;
+    font-family: "Saira Stencil",sans-serif;
+    font-weight: 500;
+    color: white;
+    z-index: 1;
+}
+
+.input-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+}
+
+#minutes{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    font-family:"Quicksand",sans-serif ;
+    font-size: 20px;
+    justify-self: cente;
+    align-self: center;
+    z-index: 1;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.601);
+}
+
+
+#minutes::placeholder{
+    font-family: "Quicksand",sans-serif ;
+    font-size: 20px;
+}
+
+.buttons-1{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.b3{
+    padding: 20px 20px 20px 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.419);
+    border-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.b3:hover{
+    background-color: rgba(255, 255, 255, 0.54);
+    transform: translateY(-5px);
+}
+.b3:active{
+    background-color:rgba(255, 255, 255, 0.749) ;
+    transform: translateY(-5px);
+}
+
+.settings{
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    width: 2%;
+    height: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 500px;
+}
+
+.i3{
+    width: 40px;
+    height: 40px;
+}

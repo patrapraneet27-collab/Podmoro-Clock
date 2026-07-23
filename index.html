@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source id="wallpaper" src="japanese-garden-rain.3840x2160.mp4" type="video/mp4">
+    </video>
+    <!-- top ribbon -->
+    <div class="top-ribbon">
+        <ion-icon name="stopwatch-outline" class="i1"></ion-icon>
+        <span class="top-text-1">PODMORO</span>
+        <span class="top-text-2">HUB</span>
+        <div class="line"></div>
+        <div class="day-and-month"></div>
+    </div>
+    <!-- buttons for switching -->
+     <div class="button-container">
+        <div class="blocks b1" onclick="showClock()"><ion-icon name="time-outline" class="i2"></ion-icon>Clock</div>
+        <div class="blocks b2" onclick="showTimer()"><ion-icon name="hourglass-outline" class="i2"></ion-icon>Timer</div>
+     </div>
+
+    <!-- CLOCK -->
+    <div id="clock">00:00:AM</div>
+
+    <!-- timer -->
+     <section id="Timer-tab">   
+        <div id="timer">25:00</div>
+        
+        <input placeholder="Minutes" type="number" max="300" min="0" id="minutes"><br>
+        <div class="buttons-1">
+            <button onclick="startTimer()" class="b3"><ion-icon class="i3" name="play-circle-outline"></ion-icon></button>
+        <button onclick="pauseTimer()" class="b3"><ion-icon class="i3" name="pause-circle-outline"></ion-icon></button>
+        <button onclick="resetTimer()" class="b3"><ion-icon class="i3" name="refresh-circle-outline"></ion-icon></button>
+        </div>        
+     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
