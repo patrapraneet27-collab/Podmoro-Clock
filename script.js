@@ -121,4 +121,34 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 });
 
+function dater(){
+    const printdate = new Date();
+    let exactday = printdate.getDate();
+    let day = printdate.getDay();
+    let month = printdate.getMonth();
+    let array = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",]
+    let montharray = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"]
+    exactday= String(exactday).padStart(2,0);
+    document.getElementById("dater").textContent=`${array[day]}, ${montharray[month]} ${exactday}`;
+}
 
+dater();
