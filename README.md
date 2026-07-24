@@ -67,7 +67,7 @@ Instead of hiding useful features behind subscriptions, Podmoro is being built a
 
 - [x] Clock
 - [x] Pomodoro Timer
-- [ ] Day and Date
+- [x] Day and Date
 - [ ] To-do List
 - [ ] Calculator
 - [ ] Calendar
